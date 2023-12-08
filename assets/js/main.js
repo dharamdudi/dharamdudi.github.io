@@ -163,15 +163,15 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    let portfolioContainer = select('.projects-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.projects-item'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select('#projects-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#projects-flters li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
@@ -193,14 +193,14 @@
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: '.projects-lightbox'
   });
 
 /**
    * Initiate portfolio details lightbox 
    */
 const portfolioDetailsLightbox = GLightbox({
-  selector: '.portfolio-details-lightbox',
+  selector: '.projects-details-lightbox',
   width: '90%',
   height: '90vh'
 });
@@ -208,7 +208,7 @@ const portfolioDetailsLightbox = GLightbox({
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.projects-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
