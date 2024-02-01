@@ -319,8 +319,8 @@ h6 {
 #home .rounded-box {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 10px;
-  background-color: #040b1445; /* Initial background color */
+  border-radius: 30px;
+  background-color: #040b145b; /* Initial background color */
   color: #fff; /* Text color */
   text-decoration: none; /* Remove default link underline */
   transition: background-color 0.3s;
@@ -424,8 +424,8 @@ section {
 
 .about .rounded-box {
   display: inline-block;
-  padding: 5px 10px;
-  border-radius: 15px;
+  padding: 7px 10px;
+  border-radius: 20px;
   background-color: #163b6b; /* Initial background color */
   color: #fff; /* Text color */
   text-decoration: none; /* Remove default link underline */
@@ -435,6 +435,21 @@ section {
 .about .rounded-box:hover {
   background-color: #163b6bca; /* Color on hover */
 }
+
+.about .rounded-box2 {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: #163b6b; /* Initial background color */
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove default link underline */
+  transition: background-color 0.3s;
+}
+
+.about .rounded-box2:hover {
+  background-color: #163b6bca; /* Color on hover */
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -520,7 +535,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
