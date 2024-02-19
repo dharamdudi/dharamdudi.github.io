@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expanding Icon</title>
+  <style>
+    /* Initial style for the container */
+    .icon-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    /* Style for the rounded box */
+    .rounded-box {
+      width: 30px; /* Adjust as needed */
+      height: 30px; /* Adjust as needed */
+      border: 2px solid #3498db; /* Border color */
+      border-radius: 15px; /* Adjust as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: width 0.3s ease-in-out;
+    }
+
+    /* Style for the icon */
+    .icon {
+      font-size: 15px; /* Adjust as needed */
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Style for the text */
+    .text {
+        font-size: 15px;
+      display: none;
+      opacity: 0; /* Hidden initially */
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Hover effect */
+    .icon-container:hover .rounded-box {
+      width: 200px; /* Adjust as needed */
+    }
+
+    /* Show the text on hover and fade the icon */
+    .icon-container:hover .text {
+      display: block;
+      animation: fadeIn 0.3s 0.3s ease-in-out forwards; /* Delay the fade-in */
+    }
+
+    .icon-container:hover .icon {
+      opacity: 0.5; /* Adjust as needed */
+    }
+
+    /* Keyframe animation for fading in the text */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="icon-container">
+    <div class="rounded-box">
+      <!-- Your icon (e.g., an SVG or an icon font) goes here -->
+      <div class="icon">🚀</div>
+      <div class="text">This is the expanded text.</div>
+    </div>
+  </div>
+
+</body>
+</html>
