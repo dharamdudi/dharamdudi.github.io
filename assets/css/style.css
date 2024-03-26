@@ -359,6 +359,10 @@ section {
   background: #f5f8fd;
 }
 
+.section-bg-img {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+}
+
 .section-title {
   padding-bottom: 30px;
 }
@@ -569,6 +573,70 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #149ddd;
+}
+
+
+/*---------------------------------------
+# badges
+--------------------------------------*/
+.badge-container {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.badge-img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s, opacity 0.3s;
+  transform-origin: center center;
+}
+
+.badge-img2 {
+  width: 90px;
+  height: 95px;
+  transition: transform 0.3s, opacity 0.3s;
+  transform-origin: center center;
+}
+
+.badge-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.badge-img:hover {
+  transform: scale(1.1);
+}
+
+.badge-img:hover + .badge-text {
+  opacity: 1;
+}
+
+.badge-img2:hover {
+  transform: scale(1.1);
+}
+
+.badge-img2:hover + .badge-text {
+  opacity: 1;
+}
+
+.badge-text p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1173,6 +1241,20 @@ section {
 .contact .php-email-form button[type=submit]:hover {
   background: #37b3ed;
 }
+
+.thank-you-footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.thank-you-block {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
 
 @keyframes animate-loading {
   0% {
